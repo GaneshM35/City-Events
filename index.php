@@ -1,4 +1,5 @@
 <?php include 'config/database.php' ; ?>
+<?php include 'weather.php' ; ?>
 <!DOCTYPE html>
 <html>
 <title>Coimbatore Events</title>
@@ -17,6 +18,14 @@
   <a href="events.php" class="w3-bar-item w3-button">Events</a>
   <a href="news.php" class="w3-bar-item w3-button">News</a>
   <a href="#" class="w3-bar-item w3-button">Publish</a>
+  <a href="#" class="w3-bar-item w3-button">Donate Blood</a>
+  <a href="#" class="w3-bar-item w3-button">Bus Details</a>
+  <a href="#" class="w3-bar-item w3-button">Gallery</a>
+  <a href="#" class="w3-bar-item w3-button">Tourism</a>
+  <a href="#" class="w3-bar-item w3-button">Phone Book</a>
+  <a href="#" class="w3-bar-item w3-button">Hostipals</a>
+  <a href="#" class="w3-bar-item w3-button">Restaruants</a>
+  <a href="#" class="w3-bar-item w3-button">Donate a food</a>
 </div>
 
 <div zclass="w3-main" id="main">
@@ -31,14 +40,33 @@
 <img src="img_car.jpg" alt="Car" style="width:100%">
 
 <div class="w3-container">
-<p>In this example, the sidebar is hidden (style="display:none")</p>
-<p>It is shown when you click on the menu icon in the top left corner.</p>
-<p>When it is opened, it shifts the page content to the right.</p>
-<p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
-</div>
+<div class="col-lg-3 col-sm-3">
+      <header class="w3-container w3-blue">
+        <center><h3><span>Weather</span></h3></center>
+      </header>
 
-</div>
+      <div class="w3-container">
+      <center><?php echo $country; ?><br><?php echo $logo; ?></center>
+        <p>
+      <?php echo $temperature; ?>
+      <?php echo $clouds; ?>
+      <?php echo $humidity; ?>
+      <?php echo $$windspeed; ?>
+      <?php echo $pressure; ?>
+      <?php echo $$visibility; ?>
+      <?php echo $sunrise; ?>
+      <?php echo $sunset; ?></p>
+      </div>
 
+      <footer class="w3-container w3-blue">
+        <h4><span>Today</span><span class="pull-right"><?php echo $desc; ?></span></h4>
+     </footer>
+    </div>
+
+  
+  </div>
+  </div>
+  
 <script>
 function w3_open() {
   document.getElementById("main").style.marginLeft = "25%";

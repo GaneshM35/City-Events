@@ -21,6 +21,14 @@
   <a href="events.php" class="w3-bar-item w3-button">Events</a>
   <a href="news.php" class="w3-bar-item w3-button">News</a>
   <a href="#" class="w3-bar-item w3-button">Publish</a>
+  <a href="#" class="w3-bar-item w3-button">Donate Blood</a>
+  <a href="#" class="w3-bar-item w3-button">Bus Details</a>
+  <a href="#" class="w3-bar-item w3-button">Gallery</a>
+  <a href="#" class="w3-bar-item w3-button">Tourism</a>
+  <a href="#" class="w3-bar-item w3-button">Phone Book</a>
+  <a href="#" class="w3-bar-item w3-button">Hostipals</a>
+  <a href="#" class="w3-bar-item w3-button">Restaruants</a>
+  <a href="#" class="w3-bar-item w3-button">Donate a food</a>
 </div>
 
 <div zclass="w3-main" id="main">
