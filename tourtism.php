@@ -1,8 +1,3 @@
-<?php include 'config/database.php'; ?>
-<?php
-  $query = "SELECT * from events";
-  $getEvents = mysqli_query($con,$query);
-?>
 <!DOCTYPE html>
 <html>
 <title>Coimbatore Events</title>
@@ -21,10 +16,10 @@
   <a href="events.php" class="w3-bar-item w3-button">Events</a>
   <a href="news.php" class="w3-bar-item w3-button">News</a>
   <a href="#" class="w3-bar-item w3-button">Publish</a>
-  <a href="blood.php" class="w3-bar-item w3-button">Blood Bank</a>
+  <a href="Blood.php" class="w3-bar-item w3-button">Blood Bank</a>
   <a href="#" class="w3-bar-item w3-button">Bus Details</a>
   <a href="#" class="w3-bar-item w3-button">Gallery</a>
-  <a href="tourtism.php" class="w3-bar-item w3-button">Tourism</a>
+  <a href="#" class="w3-bar-item w3-button">Tourism</a>
   <a href="#" class="w3-bar-item w3-button">Phone Book</a>
   <a href="#" class="w3-bar-item w3-button">Hostipals</a>
   <a href="#" class="w3-bar-item w3-button">Restaruants</a>
@@ -40,37 +35,12 @@
   </div>
 </div>
 
-<img src="images/event.gif" alt="Announcement" style="width:60%">
-
-<div class="w3-container">
-  <h2>Announcements</h2>
-  <p>Know more whats happening in and around coimbatore.</p>
-  <div class="row">
-  <div class="col-lg-12 full-width-media-text">
-  <?php while($row = mysqli_fetch_assoc($getEvents)) : ?>
-    <div class="col-lg-3 col-sm-3">
-      <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Event_Type'] ?></span></h4>
-      </header>
-
-      <div class="w3-container">
-      <ul>
-        <li><span class = "Title">Organisator :</span><span><?php echo $row['Organisator'] ?></span></li>
-        <li><span class = "Title">Description :</span><span><?php echo $row['Event_desc'] ?></span></li>
-        <li><span class = "Title">Date :</span><span><?php echo $row['Date'] ?></span></li>
-        <li><span class = "Title">Timing :</span><span><?php echo $row['From_Time'] ?> - <?php echo $row['To_Time'] ?></span></li>
-        </ul>
-      </div>
-
-      <footer class="w3-container w3-blue">
-        <h5><span><?php echo $row['Location'] ?></span><span class="pull-right"><?php echo $row['event_id'] ?></span></h5>
-     </footer>
-    </div>
-  <?php endwhile; ?>
+<div class="container">
+  <h2>Tourism Map</h2>
+  <p>Get Details and directed to your Spots</p>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.google.com/maps/d/embed?mid=1NHi0lpIEwjp2-wTSdVMcvuV6sD0"></iframe>
   </div>
-</div>
-</div>
-
 </div>
 
 <script>

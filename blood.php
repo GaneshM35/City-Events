@@ -1,7 +1,7 @@
 <?php include 'config/database.php'; ?>
 <?php
-  $query = "SELECT * from events";
-  $getEvents = mysqli_query($con,$query);
+  $query = "SELECT * from bloods";
+  $getBloods = mysqli_query($con,$query);
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,38 +40,71 @@
   </div>
 </div>
 
-<img src="images/event.gif" alt="Announcement" style="width:60%">
+<img src="images/blood.jpg" alt="Donate Blood" style="width:60%">
 
 <div class="w3-container">
-  <h2>Announcements</h2>
-  <p>Know more whats happening in and around coimbatore.</p>
-  <div class="row">
-  <div class="col-lg-12 full-width-media-text">
-  <?php while($row = mysqli_fetch_assoc($getEvents)) : ?>
-    <div class="col-lg-3 col-sm-3">
-      <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Event_Type'] ?></span></h4>
-      </header>
+  <h2>Blood Donators</h2>
+  <p>Save Life..  Donate Blood</p>
+  <div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Mobile</th>
+        <th>Blood Group</th>
+        <th>Request Blood</th>
+      </tr>
+    </thead>
+    <tbody>
+  
+  <?php while($row = mysqli_fetch_assoc($getBloods)) : ?>
+        <tr>
+        <td><?php echo $row['Name'] ?></td>
+        <td><?php echo $row['Location'] ?></td>
+        <td><?php echo $row['Mobile'] ?></td>
+        <td><?php echo $row['Blood_Group'] ?></td>
+        <td><form action='message.php' method='POST'><input type='hidden' name='tempId' value= <?php echo $row['Mobile'] ?>/>
+              <span>
+              <button type="button" data-id =<?php echo $row['Mobile'] ?> class="open-message btn btn-info btn-lg" data-toggle="modal" data-target="#reqBlood">Send Message</button>
 
-      <div class="w3-container">
-      <ul>
-        <li><span class = "Title">Organisator :</span><span><?php echo $row['Organisator'] ?></span></li>
-        <li><span class = "Title">Description :</span><span><?php echo $row['Event_desc'] ?></span></li>
-        <li><span class = "Title">Date :</span><span><?php echo $row['Date'] ?></span></li>
-        <li><span class = "Title">Timing :</span><span><?php echo $row['From_Time'] ?> - <?php echo $row['To_Time'] ?></span></li>
-        </ul>
+  <!-- Modal -->
+  <div class="modal fade" id="reqBlood" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Request a Blood</h4>
+        </div>
+        <div class="modal-body">
+        <form method = "post" action = "message.php">
+          <p><span>Mobile Number :</span>
+          <span><input type="text" name = "mobileNo" id="mobileNo" value ="" />
+          </span></p>
+          <p><span>Message :</span>
+          <span><textarea name = "message" id = "message"></textarea></span></p>
+          <center><input type = "submit" name = "submit" value = "Request"> </center>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
-
-      <footer class="w3-container w3-blue">
-        <h5><span><?php echo $row['Location'] ?></span><span class="pull-right"><?php echo $row['event_id'] ?></span></h5>
-     </footer>
+      
     </div>
+  </div></span>
+        </td>
+      </tr>
   <?php endwhile; ?>
-  </div>
+  </tbody>
+  </table>
+</div>
 </div>
 </div>
 
-</div>
+
 
 <script>
 function w3_open() {
@@ -85,6 +118,14 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
+</script>
+
+<script>
+  $(document).on("click", ".open-message", function () {
+     var mobileNo = $(this).data('id');
+     $(".modal-body #mobileNo").val( mobileNo );
+});
+
 </script>
 
 </body>
