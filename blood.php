@@ -43,6 +43,65 @@
 <img src="images/blood.jpg" alt="Donate Blood" style="width:60%">
 
 <div class="w3-container">
+  <h2>Blood Banks in Coimbatore</h2>
+  <div class="row">
+  <div class="col-lg-12 full-width-media-text">
+    <div class="col-lg-3 col-sm-3">
+      <header class="w3-container w3-blue">
+        <h4><span>PSG HOSPITALS</span></h4>
+      </header>
+
+      <div class="w3-container">
+      <ul>
+        <li><span class = "Title">Contact :</span><span>Mr.PS.Govindaswamy Naidu</span></li>
+        <li><span class = "Title">Phone :</span><span>0422 - 2570170 , 0422 - 2598822 </span></li>
+        <li><span class = "Title">Address :</span><span>Peelamedu, Avinashi Road, Coimbatore - 641004. </span></li>
+        </ul>
+      </div>
+
+      <footer class="w3-container w3-blue">
+        <h5><span>Area :</span><span class="pull-right">Peelamedu </span></h5>
+     </footer>
+    </div>
+    <div class="col-lg-3 col-sm-3">
+      <header class="w3-container w3-blue">
+        <h4><span>SHEELA HOSPITAL</span></h4>
+      </header>
+
+      <div class="w3-container">
+      <ul>
+        <li><span class = "Title">Contact :</span><span>Sheela Hospital</span></li>
+        <li><span class = "Title">Phone :</span><span>0422 - 2498381 , 0422 - 4334500, 0422 - 2498383  </span></li>
+        <li><span class = "Title">Address :</span><span>#46/117, East Power House Road, Tatabad, Coimbatore - 641012. </span></li>
+        </ul>
+      </div>
+
+      <footer class="w3-container w3-blue">
+        <h5><span>Area :</span><span class="pull-right">Tatabad </span></h5>
+     </footer>
+    </div>
+    <div class="col-lg-3 col-sm-3">
+      <header class="w3-container w3-blue">
+        <h4><span>KARPAGAM HOSPITAL </span></h4>
+      </header>
+
+      <div class="w3-container">
+      <ul>
+        <li><span class = "Title">Contact :</span><span>KARPAGAM HOSPITAL </span></li>
+        <li><span class = "Title">Phone :</span><span>0422 - 6554443 , 0422 - 6452888 </span></li>
+        <li><span class = "Title">Address :</span><span>Pollachi Main Road, Othakkalmandapam, Coimbatore - 641032</span></li>
+        </ul>
+      </div>
+
+      <footer class="w3-container w3-blue">
+        <h5><span>Area :</span><span class="pull-right">Othakkalmandapam </span></h5>
+     </footer>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="w3-container">
   <h2>Blood Donators</h2>
   <p>Save Life..  Donate Blood</p>
   <div class="container">
@@ -82,6 +141,9 @@
         <form method = "post" action = "message.php">
           <p><span>Mobile Number :</span>
           <span><input type="text" name = "mobileNo" id="mobileNo" value ="" />
+          </span></p>
+          <p><span>Emergency contact Person Number :</span>
+          <span><input type="text" name = "emergyNo" id="emergyNo" value ="" />
           </span></p>
           <p><span>Message :</span>
           <span><textarea name = "message" id = "message"></textarea></span></p>

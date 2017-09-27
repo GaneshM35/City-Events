@@ -1,0 +1,967 @@
+/* $Id$ */
+/*
+  Icon Font: fontcustom
+*/
+
+@font-face {
+    font-family: 'Custom-fonts';
+    src:  url('Custom-fonts.eot?6of5kz');
+    src:  url('Custom-fonts.eot?6of5kz#iefix') format('embedded-opentype'),
+    url('Custom-fonts.ttf?6of5kz') format('truetype'),
+    url('Custom-fonts.woff?6of5kz') format('woff'),
+    url('Custom-fonts.svg?6of5kz#Custom-fonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="iS-"], [class*=" iS-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Custom-fonts' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.2;
+  word-wrap: initial;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block;
+}
+
+/* ICONS STARTED*/
+.iS-5Arrows4, .iS-5Arrows3, .iS-5Arrows2, .iS-5Arrows1, .iS-5Arrows5, .iS-3Triangles0 {
+    /*display: inherit;*/
+}
+/*green*/
+.iS-5Arrows4:before, .iS-5ArrowsGray4:before {
+    content: "\e955";
+    color: #408061;
+}
+.iS-5Arrows4:after, .iS-5ArrowsGray4:after {
+    content: "\e956";
+    margin-left: -1.0361328125em;
+    color: #5ab187;
+}
+/*yellow 1*/
+.iS-5Arrows3, .iS-5ArrowsGray3 {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.iS-5Arrows3:before, .iS-5ArrowsGray3:before {
+    content: "\e955";
+    color: #b09240;
+}
+.iS-5Arrows3:after, .iS-5ArrowsGray3:after {
+    content: "\e956";
+    margin-left: -1.0361328125em;
+    color: #fcd058;
+}
+/*yellow 2*/
+.iS-5Arrows2, .iS-5ArrowsGray2 {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.iS-5Arrows2:before, .iS-5ArrowsGray2:before {
+    content: "\e955";
+    color: #b09240;
+}
+.iS-5Arrows2:after, .iS-5ArrowsGray2:after {
+    content: "\e956";
+    margin-left: -1.0361328125em;
+    color: #fcd058;
+}
+/*yellow 3*/
+.iS-5Arrows1, .iS-5ArrowsGray1 {
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.iS-5Arrows1:before, .iS-5ArrowsGray1:before {
+    content: "\e955";
+    color: #b09240;
+}
+.iS-5Arrows1:after, .iS-5ArrowsGray1:after {
+    content: "\e956";
+    margin-left: -1.0361328125em;
+    color: #fcd058;
+}
+/*red*/
+.iS-5Arrows0, .iS-3Triangles0, .iS-5ArrowsGray0 {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.iS-5Arrows0:before, .iS-5ArrowsGray0:before {
+    content: "\e955";
+}
+.iS-5Arrows0:before {
+    color: #9b514a;
+}
+.iS-5Arrows0:after, .iS-5ArrowsGray0:after {
+    content: "\e956";
+    margin-left: -1.0361328125em;
+    color: #cf6a61;
+}
+
+.iS-5ArrowsGray0:before, .iS-5ArrowsGray1:before, .iS-5ArrowsGray2:before, .iS-5ArrowsGray3:before, .iS-5ArrowsGray4:before {
+    /*color: #989898;*/
+    color: #7c7c7c;
+}
+
+.iS-5ArrowsGray0:after, .iS-5ArrowsGray1:after, .iS-5ArrowsGray2:after, .iS-5ArrowsGray3:after, .iS-5ArrowsGray4:after {
+    /*color: #c0c0c0;*/
+    color: #848484;
+}
+
+/*circle*/
+.iS-5TrafficLights4:before {
+    content: "\e959";
+    color: #408061;
+}
+.iS-5TrafficLights4:after {
+    content: "\e95a";
+    margin-left: -1.0361328125em;
+    color: #5ab187;
+}
+.iS-5TrafficLights3:before {
+    content: "\e959";
+    /*color: #635328;*/
+    color: #b09240;
+}
+.iS-5TrafficLights3:after {
+    content: "\e95a";
+    margin-left: -1.0361328125em;
+    color: #fcd058;
+}
+.iS-5TrafficLights2:before, .iS-4RedToBlack3:before, .iS-4RedToBlack2:before {
+    content: "\e959";
+    /*color: #562f2b;*/
+    color: #9b514a;
+}
+.iS-5TrafficLights2:after, .iS-4RedToBlack3:after, .iS-4RedToBlack2:after {
+    content: "\e95a";
+    margin-left: -1.0361328125em;
+    color: #e07369;
+}
+.iS-4RedToBlack2:before {
+    color: #e99b9d;
+
+}
+.iS-4RedToBlack2:after {
+    color: #eea0a2;
+}
+.iS-5TrafficLights1:before, .iS-4RedToBlack1:before {
+    content: "\e959";
+    /*color: #989898;*/
+    color: #7c7c7c; 
+}
+.iS-5TrafficLights1:after, .iS-4RedToBlack1:after {
+    content: "\e95a";
+    margin-left: -1.0361328125em;
+    /*color: #c0c0c0;*/
+    color: #848484;
+}
+.iS-5TrafficLights0:before, .iS-4RedToBlack0:before {
+    content: "\e959";
+    color: #562f2b;
+}
+.iS-5TrafficLights0:after, .iS-4RedToBlack0:after {
+    content: "\e95a";
+    margin-left: -1.0361328125em;
+    color: #000;
+}
+
+.iS-3TrafficLights20:before, .iS-3TrafficLights21:before, .iS-3TrafficLights22:before {
+    content: "\e909";
+    color: #000;
+}
+.iS-3TrafficLights20:after, .iS-3TrafficLights21:after, .iS-3TrafficLights22:after {
+    content: "\e90a";
+    margin-left: -1em;
+    color: #264f3b;
+}
+.iS-3TrafficLights20 span:before, .iS-3TrafficLights21 span:before, .iS-3TrafficLights22 span:before {
+    content: "\e90b";
+    margin-left: -1em;
+    color: #e07369;
+}
+.iS-3TrafficLights21 span:before {
+    color: #fcd058;
+}
+.iS-3TrafficLights22 span:before {
+    color: #5ab187; 
+}
+/*triangle*/
+.iS-3Signs1:before {
+    content: "\e970";
+    color: #fcd058;
+}
+.iS-3Signs1:after {
+    content: "\e971";
+    margin-left: -1.0712890625em;
+    color: #b09240;
+}
+/*diamond*/
+.iS-3Signs0:before {
+    content: "\e968";
+    color: #e07369;
+}
+.iS-3Signs0:after {
+    content: "\e969";
+    margin-left: -1em;
+    color: #9b514a;
+}
+/*triangle green*/
+.iS-3Triangles2:before {
+    content: "\e953";
+    color: #5ab187;
+}
+.iS-3Triangles2:after {
+    content: "\e954";
+    margin-left: -1.0361328125em;
+    color: #408061;
+}
+/*triangle yellow*/
+.iS-3Triangles1:before {
+    content: "\e951";
+    color: #fcd058;
+}
+.iS-3Triangles1:after {
+    content: "\e952";
+    margin-left: -1.0361328125em;
+    color: #b09240;
+}
+/*triangle red*/
+.iS-3Triangles0:before {
+    content: "\e953";
+    color: #e07369;
+}
+.iS-3Triangles0:after {
+    content: "\e954";
+    margin-left: -1.0361328125em;
+    color: #9b514a;
+}
+/*heart green */
+.iS-3Heart2:before {
+    content: "\e90f";
+    color: #52a37c;
+}
+.iS-3Heart2:after {
+    content: "\e920";
+    margin-left: -1.12890625em;
+    color: #5ab187;
+}
+/*heart yellow */
+.iS-3Heart1:before {
+    content: "\e90f";
+    color: #e8bf50;
+}
+.iS-3Heart1:after {
+    content: "\e920";
+    margin-left: -1.12890625em;
+    color: #fcd058;
+}
+/*heart red */
+.iS-3Heart0:before {
+    content: "\e93b";
+    color: #e07369;
+}
+.iS-3Heart0:after {
+    content: "\e93c";
+    margin-left: -1.12890625em;
+    color: #9b514a;
+}
+/* tick */
+.iS-2Indicators1:before {
+    content: "\e972";
+    color: #408061;
+}
+.iS-2Indicators1:after {
+    content: "\e973";
+    margin-left: -1.173828125em;
+    color: #5ab187;
+}
+.iS-2Indicators2:before {
+    content: "\e965";
+    color: #408061;
+}
+.iS-2Indicators2:after {
+    content: "\e966";
+    margin-left: -1.181640625em;
+    color: #5ab187;
+}
+/* not */
+/*.iS-3Indicators1:before {
+    content: "\e90b";
+    color: #635328;
+}
+.iS-3Indicators1:after {
+    content: "\e906";
+    margin-left: -0.181640625em;
+    color: #fcd058;
+}*/
+/* cross */
+.iS-2Indicators0:before {
+    content: "\e957";
+    color: #9b514a;
+}
+.iS-2Indicators0:after {
+    content: "\e958";
+    margin-left: -1em;
+    color: #e07369;
+}
+
+/* circle cross */
+.iS-3Symbols0:before {
+    content: "\e948";
+    color: #9b514a;
+}
+.iS-3Symbols0 span:before {
+    content: "\e949";
+    margin-left: -1em;
+    color: #cf6a61;
+}
+.iS-3Symbols0:after {
+    content: "\e94a";
+    margin-left: -1em;
+    color: #fff;
+}
+/* circle not */
+.iS-3Symbols1:before {
+    content: "\e94b";
+    color: #efc75a;
+}
+.iS-3Symbols1 span:before {
+    content: "\e94c";
+    margin-left: -1em;
+    color: #b09240;
+}
+.iS-3Symbols1 span:after {
+    content: "\e94d";
+    margin-left: -1em;
+    color: #fff;
+}
+.iS-3Symbols1:after {
+    content: "\e94e";
+    margin-left: -1em;
+    color: #fff;
+}
+/* circle tick */
+.iS-3Symbols2:before {
+    content: "\e96a";
+    color: #52a37c;
+}
+.iS-3Symbols2 span:before {
+    content: "\e96b";
+    margin-left: -1em;
+    color: #408061;   
+}
+.iS-3Symbols2:after {
+    content: "\e96c";
+    margin-left: -1em;
+    color: #fff;
+}
+/* Flags red */
+.iS-3Flags0:before {
+    content: "\e900";
+    color: #e07369;
+}
+.iS-3Flags0:after {
+    content: "\e901";
+    margin-left: -0.818359375em;
+    color: #562f2b;
+}
+.iS-3Flags0 span:before {
+    /*content: "\e91a";
+    margin-left: -0.818359375em;
+    color: #e07369;*/
+}
+.iS-3Flags0 span:after {
+    /*content: "\e91b";
+    margin-left: -0.818359375em;
+    color: #9b514a;*/
+}
+/* Flags yellow */
+.iS-3Flags1:before {
+    content: "\e900";
+    color: #e8bf50;
+}
+.iS-3Flags1:after {
+    content: "\e901";
+    margin-left: -0.818359375em;
+    color: #635328;
+}
+.iS-3Flags1 span:before {
+    /*content: "\e91a";
+    margin-left: -0.818359375em;
+    color: #e8bf50;*/
+}
+.iS-3Flags1 span:after {
+    /*content: "\e91b";
+    margin-left: -0.818359375em;
+    color: #b09240;*/
+}
+/* Flags green */
+.iS-3Flags2:before {
+    content: "\e900";
+    color: #52a37c;
+}
+.iS-3Flags2:after {
+    content: "\e901";
+    margin-left: -0.818359375em;
+    color: #264f3b;
+}
+.iS-3Flags2 span:before {
+    /*content: "\e91a";
+    margin-left: -0.818359375em;
+    color: #52a37c;*/
+}
+.iS-3Flags2 span:after {
+    /*content: "\e91b";
+    margin-left: -0.818359375em;
+    color: #408061;*/
+}
+/* star empty */
+.iS-3Stars0:before {
+    content: "\e93d";
+    color: #2c2513;
+}
+.iS-3Stars0:after {
+    content: "\e93e";
+    margin-left: -1.0302734375em;
+    color: #fff;
+}
+
+.iS-3Stars1:before {
+    content: "\e93f";
+    color: #2c2513;
+}
+.iS-3Stars1 span:before {
+    content: "\e940";
+    margin-left: -1.0302734375em;    
+    color: #fff
+}
+.iS-3Stars1:after {
+    content: "\e941";
+    margin-left: -1.0302734375em;    
+    color: #fcd058; 
+}
+.iS-3Stars2:before {
+    content: "\e93d";
+    color: #2c2513;
+}
+.iS-3Stars2:after {  
+    content: "\e93e";
+    margin-left: -1.0302734375em;
+    color: #fcd058;
+}
+
+/* heart ratings */
+.iS-3HeartRating0:before {
+    content: "\e93b";    
+    color: #fff;
+}
+.iS-3HeartRating0:after {
+    content: "\e93c";    
+    margin-left: -1.12890625em;  
+    color: #9b514a;
+}
+.iS-3HeartRating1:before {
+    content: "\e938";    
+    color: #fff;
+}
+.iS-3HeartRating1 span:before {
+    content: "\e939";    
+    margin-left: -1.12890625em;
+    color: #e07369; 
+}
+.iS-3HeartRating1:after {
+    content: "\e93a";    
+    margin-left: -1.12890625em;
+    color: #9b514a;
+}
+
+.iS-3HeartRating2:before {
+    content: "\e93b";    
+    color: #e07369;
+}
+.iS-3HeartRating2:after {
+    content: "\e93c";    
+    margin-left: -1.12890625em;      
+    color: #9b514a;
+}
+
+.iS-5Quarters0:before {
+    content: "\e962";
+    color: #989898;
+}
+.iS-5Quarters0:after {
+    content: "\e963";
+    margin-left: -1em;
+    color: #dedede;
+}
+.iS-5Quarters1:before {
+    content: "\e962";
+   color: #989898;
+}
+.iS-5Quarters1 span:before {
+    content: "\e963";
+    margin-left: -1em;
+    color: #dedede;
+}
+.iS-5Quarters1:after {
+    content: "\e964";
+    margin-left: -1em;
+    color: #000;
+}
+.iS-5Quarters2:before {
+    content: "\e96d";
+    color: #dedede;
+}
+.iS-5Quarters2 span:before {
+    content: "\e96e";
+    margin-left: -1em;
+    color: #000;
+}
+.iS-5Quarters2:after {
+    content: "\e96f";
+    margin-left: -1em;
+    color: #989898;
+}
+.iS-5Quarters3:before {
+    content: "\e95f";
+    color: #989898;
+}
+.iS-5Quarters3 span:before {
+    content: "\e960";
+    margin-left: -1em;
+    color: #000;
+}
+.iS-5Quarters3:after {
+    content: "\e961";
+    margin-left: -1em;
+    color: #dedede;
+}
+.iS-5Quarters4:before {
+    content: "\e962";
+    color: #001;
+}
+.iS-5Quarters4:after {
+    content: "\e963";
+    margin-left: -1em;
+    color: #000;
+}
+
+.iS-5Smileys4:before {
+    content: "\e92d";
+    color: #b09240;
+}
+.iS-5Smileys4 span:before {
+    content: "\e92e";
+    margin-left: -0.970703125em;
+    color: #fcd058;
+}
+.iS-5Smileys4 span:after {
+    /*content: "\e974";
+    margin-left: -1em;
+    color: #000;*/
+}
+.iS-5Smileys4:after {
+    content: "\e92f";
+    margin-left: -0.970703125em;
+    color: #000;
+}
+
+/* 5 smiley */
+.iS-5Smileys3:before {
+    content: "\e922";
+    color: #b09240;
+}
+.iS-5Smileys3 span:before {
+    content: "\e923";
+    margin-left: -1em;
+    color: #fcd058;
+}
+.iS-5Smileys3 span:after {
+    content: "\e924";
+    margin-left: -1em;
+    color: #000;
+}
+.iS-5Smileys3:after {
+    content: "\e925";
+    margin-left: -1em;
+    color: #000;
+}
+
+.iS-5Smileys2:before {
+    content: "\e92a";
+    color: #b09240;
+}
+.iS-5Smileys2 span:before {
+    content: "\e92b";
+    margin-left: -1em;
+    color: #fcd058;
+}
+.iS-5Smileys2:after {
+    content: "\e92c";
+    margin-left: -1em;
+    color: #000;
+}
+
+.iS-5Smileys1:before {
+    content: "\e926";
+    color: #b09240;
+}
+.iS-5Smileys1 span:before {
+    content: "\e927";
+    margin-left: -1em;
+    color: #fcd058;
+}
+.iS-5Smileys1 span:after {
+    content: "\e928";
+    margin-left: -1em;
+    color: #000;
+}
+.iS-5Smileys1:after {
+    content: "\e929";
+    margin-left: -1em;
+    color: #000;
+}
+
+.iS-5Smileys0:before {
+    content: "\e94f";
+    color: #b09240;
+}
+.iS-5Smileys0 span:before {
+    content: "\e950";
+    margin-left: -0.970703125em;
+    color: #fcd058;
+}
+.iS-5Smileys0:after {
+    content: "\e967";
+    margin-left: -0.970703125em;
+    color: #000;
+}
+
+.iS-2Likes0:before {
+    content: "\e907";
+    color: #e07369;
+}
+.iS-2Likes0:after {
+    content: "\e908";
+    margin-left: -1.09375em;
+    color: #9b514a;
+}
+.iS-2Likes1:before {
+    content: "\e902";
+    color: #52a37c;
+}
+.iS-2Likes1:after {
+    content: "\e903";
+    margin-left: -1.12890625em;
+    color: #408061;
+}
+.iS-2Love0:before {
+    content: "\e93b";
+    color: #e07369;
+}
+.iS-2Love0:after {
+    content: "\e93c";
+    margin-left: -1.12890625em;
+    color: #9b514a;
+}
+.iS-2Love1:before {
+    content: "\e904";
+    color: #e07369;
+}
+.iS-2Love1 span:before {
+    content: "\e905";
+    margin-left: -1.12890625em;
+    color: #9b514a;
+}
+.iS-2Love1:after {
+    content: "\e906";
+    margin-left: -1.12890625em;
+    color: #fff;
+}
+
+/*weather */
+.iS-5Weather3:before {
+    content: "\e910";
+    color: #5690c0;
+}
+.iS-5Weather3:after {
+    content: "\e911";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+.iS-5Weather4:before {
+    content: "\e916";
+    color: #e0a322;
+}
+.iS-5Weather4 span:before {
+    content: "\e917";
+    margin-left: -1.107421875em;
+    color: #f1b129;
+}
+.iS-5Weather4 span:after {
+    content: "\e918";
+    margin-left: -1.107421875em;
+    color: #5690c0;
+}
+.iS-5Weather4:after {
+    content: "\e919";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+
+.iS-5Weather2:before {
+    content: "\e91e";
+    color: #5690c0;
+}
+.iS-5Weather2 span:before {
+    content: "\e91f";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+.iS-5Weather2 span:after {
+    content: "\e920";
+    margin-left: -1.107421875em;
+    color: #4c5fcd;
+}
+.iS-5Weather2:after {
+    content: "\e921";
+    margin-left: -1.107421875em;
+    color: #4253ba;
+}
+
+
+.iS-5Weather1:before {
+    content: "\e90c";
+    color: #5690c0;
+}
+.iS-5Weather1 span:before {
+    content: "\e90d";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+.iS-5Weather1 span:after {
+    content: "\e90e";
+    margin-left: -1.107421875em;
+    color: #e86907;
+}
+.iS-5Weather1:after {
+    content: "\e90f";
+    margin-left: -1.107421875em;
+    color: #ff6f00;
+}
+
+
+.iS-5Weather0:before {
+    content: "\e912";
+    color: #1671b9;
+}
+.iS-5Weather0 span:before {
+    content: "\e913";
+    margin-left: -1.107421875em;
+    color: #1d8ae0;
+}
+.iS-5Weather0 span:after {
+    content: "\e914";
+    margin-left: -1.107421875em;
+    color: #5690c0;
+}
+.iS-5Weather0:after {
+    content: "\e915";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+
+
+
+.iS-5Weather5:before {
+    content: "\e91a";
+    color: #5690c0;
+}
+.iS-5Weather5 span:before {
+    content: "\e91b";
+    margin-left: -1.107421875em;
+    color: #a7d4f9;
+}
+.iS-5Weather5 span:after {
+    content: "\e91c";
+    margin-left: -1.107421875em;
+    color: #3747a3;
+}
+.iS-5Weather5:after {
+    content: "\e91d";
+    margin-left: -1.107421875em;
+    color: #3f51b5;
+}
+
+/*weather */
+#iconSetTip .iS-None:before, .w100 .iS-None:before {
+    content: "\e916";
+    color: transparent;
+}
+#iconSetTip .iS-None:after, .w100 .iS-None:after {
+    content: "\e915";
+    margin-left: -1em;
+    color: transparent;
+}
+.kDis {
+    font-size: 10pt;
+}
+.f10 .kDis, .f9 .kDis, .f8 .kDis {
+    margin-top: 2px;
+}
+.f11 .kDis {
+    margin-top: 2px;
+}
+.f12 .kDis {
+    margin-top: 4px;
+}
+.f14 .kDis {
+    margin-top: 5px;
+}
+.f16 .kDis {
+    margin-top: 6px;
+}
+.f18 .kDis {
+    margin-top: 9px;
+}
+.f20 .kDis {
+    margin-top: 10px;
+}
+.f22 .kDis {
+    margin-top: 12px;
+}
+.f24 .kDis {
+    margin-top: 13px;
+}
+.f26 .kDis {
+    margin-top: 15px;
+}
+.f28 .kDis {
+    margin-top: 17px;
+}
+.f32 .kDis {
+    margin-top: 21px;
+}
+.f40 .kDis {
+    margin-top: 27px;
+}
+.f48 .kDis {
+    margin-top: 32px;
+}
+.f56 .kDis {
+    margin-top: 36px;
+}
+.f64 .kDis {
+    margin-top: 44px;
+}
+.f72 .kDis {
+    margin-top: 52px;
+}
+.fac.hcc .w100 .iS-5Arrows4 {
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+}
+.fac.hcc .w100 .iS-5Arrows3 {
+    -webkit-transform: translateX(-50%) rotate(45deg) !important;
+    transform: translateX(-50%) rotate(45deg) !important;
+}
+.fac.hcc .w100 .iS-5Arrows2 {
+    -webkit-transform: translateX(-50%) rotate(90deg) !important;
+    transform: translateX(-50%) rotate(90deg) !important;
+}
+.fac.hcc .w100 .iS-5Arrows1 {
+    -webkit-transform: translateX(-50%) rotate(135deg) !important;
+    transform: translateX(-50%) rotate(135deg) !important;
+}
+.fac.hcc .w100 .iS-5Arrows0, .fac.hcc .w100 .iS-3Triangles0 {
+    -webkit-transform: translateX(-50%) rotate(180deg) !important;
+    transform: translateX(-50%) rotate(180deg) !important;
+}
+.tar .w100 > span, .far .w100 > span {
+    float: left;
+}
+/**Added for RTL **/
+.w100 > span{
+    float: left;
+}
+/****/
+/* newly added for icon misalignment */
+.fac .w100 {
+    position: relative;
+}
+.fal .w100 > span {
+    float: left;
+}
+.fac .w100 > span {
+    position: absolute;
+    left: 0px;
+    z-index: -1;
+}
+.w100 > .iS-3TrafficLights20, .w100 > .iS-3TrafficLights21, .w100 > .iS-3TrafficLights22, .w100 > .iS-3Flags0, .w100 > .iS-3Flags1, .w100 > .iS-3Flags2 {
+    margin-left: 1px;
+}
+.tac .w100 > span {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+.vat.f11.fac .w100 span, .vat.f12.fac .w100 span {
+    /*top: 0;*/
+}
+.vam.f11.fac .w100 span, .vab.f11.fac .w100 span, .vam.f12.fac .w100 span, .vab.f12.fac .w100 span, .vab.f22.fac .w100 span, .vam.f22.fac .w100 span, .vab.f24.fac .w100 span {
+    /*top: -1px;*/
+}
+.vam.f26.fac .w100 span, .vam.f28.fac .w100 span, .vab.f28.fac .w100 span, .vam.f32.fac .w100 span, .vam.f40.fac .w100 span, .vam.f48.fac .w100 span {
+    /*top: -1px;*/
+}
+.vab.f26.fac .w100 span, .vab.f32.fac .w100 span, .vab.f40.fac .w100 span, .vab.f48.fac .w100 span, .vam.f56.fac .w100 span, .vam.f64.fac .w100 span {
+    /*top: -2px;*/
+}
+.vab.f56.fac .w100 span {
+    /*top: -3px;*/
+}
+.vab.f64.fac .w100 span {
+    /*top: -4px;*/
+}
+.vam.f64.fac .w100 span {
+    /*top: -4px;*/
+}
+.vam.f72.fac .w100 span {
+    /*top: -2px;*/
+}
+.vab.f72.fac .w100 span {
+    /*top: -5px;*/
+}
+.rmAr { /* rules margin align right */
+    /*margin-right: 67px !important;*/
+}
+/* newly added for icon misalignment */
+
+.far.hcc .w100 > span
+{
+    float: right;
+
+}
+.fac.hcc .w100 > span, .tac.hcc .w100 > span
+{
+    position :absolute;
+    left : 50%;
+    -webkit-transform : translateX(-50%);
+    transform : translateX(-50%);
+}
+.W.iconWrap{
+    word-wrap: normal;
+    word-break: break-all;
+
+}
+_::-webkit-full-page-media, _:future, :root .W.iconWrap {
+    white-space: pre;
+    word-break: break-all;
+    word-wrap: break-word;
+}

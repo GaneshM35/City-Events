@@ -1,5 +1,5 @@
 <?php include 'config/database.php' ; ?>
-<?php include 'weather.php' ; ?>
+<?php include 'api/weather.php' ; ?>
 <!DOCTYPE html>
 <html>
 <title>Coimbatore Events</title>
@@ -11,21 +11,67 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close <span class="pull-right glyphicon glyphicon-remove"></span></button>
-  <a href="#" class="w3-bar-item w3-button"><span class="pull-left fa fa-home"></span>announcement</a>
-  <a href="events.php" class="w3-bar-item w3-button">Events</a>
-  <a href="news.php" class="w3-bar-item w3-button">News</a>
-  <a href="#" class="w3-bar-item w3-button">Publish</a>
-  <a href="blood.php" class="w3-bar-item w3-button">Blood Bank</a>
-  <a href="#" class="w3-bar-item w3-button">Bus Details</a>
-  <a href="#" class="w3-bar-item w3-button">Gallery</a>
-  <a href="tourtism.php" class="w3-bar-item w3-button">Tourism</a>
-  <a href="#" class="w3-bar-item w3-button">Phone Book</a>
-  <a href="#" class="w3-bar-item w3-button">Hostipals</a>
-  <a href="#" class="w3-bar-item w3-button">Restaruants</a>
-  <a href="#" class="w3-bar-item w3-button">Donate a food</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button"><span class="pull-left fa fa-home"></span>Announcesments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">updates</a>
+      <a href="news.php" class="w3-bar-item w3-button">News</a>
+      <a href="#" class="w3-bar-item w3-button">Publish</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Social Activaties
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="blood.php" class="w3-bar-item w3-button">Blood Bank</a>
+      <a href="#" class="w3-bar-item w3-button">Donate a food</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">More about Coimbatore
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Gallery</a>
+      <a href="#" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Events
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Technical Events</a>
+      <a href="#" class="w3-bar-item w3-button">Non-Technical Events</a>
+      <a href="#" class="w3-bar-item w3-button">Discourses</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Phone Book
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Emergency</a>
+      <a href="#" class="w3-bar-item w3-button">Essentials</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Transportation
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Bus Details</a>
+      <a href="#" class="w3-bar-item w3-button">Local Auto App</a>
+    </div>
+  </div> 
+  <a href="tourtism.php" class="w3-bar-item w3-button">Place of Interest</a>
+  <a href="guides.php" class="w3-bar-item w3-button">Guides in Coimbatore</a>
 </div>
 
 <div zclass="w3-main" id="main">
