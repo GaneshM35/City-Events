@@ -1,11 +1,25 @@
-<?php include 'config/database.php'; ?>
 <?php
-  $query = "SELECT * from jobs";
-  $getJobs = mysqli_query($con,$query);
+include 'config/database-config.php' ;
+?>
+<?php
+$s ="";
+if(isset($_POST['Speciality'])){
+		$s = $_POST['Speciality'];
+	}
+	if($s == ""){
+		$sql='SELECT * FROM hospitals';
+		$query = $dbh->prepare($sql);
+	$query->execute();
+	}else{
+	$sql='SELECT * FROM hospitals WHERE Hos_Cat = :s' ;
+	$query = $dbh->prepare($sql);
+
+	$query->execute(array(':s' => $s));
+	}
 ?>
 <!DOCTYPE html>
 <html>
-<title>Coimbatore Jobs</title>
+<title>Coimbatore Events</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -65,6 +79,7 @@
   <a href="rental.php" class="w3-bar-item w3-button">Rent a House</a>
 
 </div>
+
 <div zclass="w3-main" id="main">
 
 <div class="w3-teal">
@@ -74,30 +89,47 @@
   </div>
 </div>
 
-<img src="images/jobs.jpg" alt="Announcement" style="width:60%">
+<img src="images/hospitals.jpg" alt="Announcement" style="width:60%">
 
 <div class="w3-container">
-  <h2>Jobs</h2>
-  <p>Jobs available in coimbatore.</p>
+  <h2>Hospitals in Coimbatore</h2>
+  <p>Know more whats happening in and around coimbatore.</p>
+<div class="row">
+<form class="form-horizontal" method="POST" action="hostipals.php">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Speciality">Speciality:</label>
+      <div class="col-sm-10">          
+    <select class="form-control" name ="Speciality">
+    <option value="">select Speciality Type</option>
+    <option value="AYURVEDIC AND SIDDHA">AYURVEDIC AND SIDDHA</option>
+    <option value="EYE HOSPITALS">EYE HOSPITALS</option>
+    <option value="ENT HOSPITALS">ENT HOSPITALS</option>
+    </select>
+    </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="text" class="btn btn-default" >Submit</button>
+    </form>
+</div><br><br>
   <div class="row">
   <div class="col-lg-12 full-width-media-text">
-  <?php while($row = mysqli_fetch_assoc($getJobs)) : ?>
-    <div class="col-lg-4 col-sm-4">
+  <?php while($row = $query->fetch(PDO::FETCH_ASSOC)) : ?>
+    <div class="col-lg-3 col-sm-3">
       <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Company_name'] ?></span></h4>
+        <h4><span><?php echo $row['Name'] ?></span></h4>
       </header>
 
       <div class="w3-container">
       <ul>
-        <li><span class = "Title">Description :</span><span><?php echo $row['Description'] ?></span></li>
-        <li><span class = "Title">Profile :</span><span><?php echo $row['profile'] ?></span></li>
-        <li><span class = "Title">Experiences :</span><span><?php echo $row['experience'] ?></span></li>
-        <li><span class = "Title">Apply Before :</span><span><?php echo $row['Apply_by'] ?></span></li>
+        <li><span class = "Title">Phone :</span><span><?php echo $row['Phone'] ?></span></li>
+        <li><span class = "Title">Address :</span><span><?php echo $row['Address'] ?></span></li>
+        <li><span class = "Title">Speciality :</span><span><?php echo $row['Hos_Cat'] ?></span></li>
         </ul>
       </div>
 
       <footer class="w3-container w3-blue">
-        <h5><span>More Details</span><span class="pull-right"><a href ="<?php echo $row['details'] ?>"><?php echo $row['Company_name'] ?></a></span></h5>
+        <h5><span>Review</span><span class="pull-right"><?php echo $row['Review'] ?></span></h5>
      </footer>
     </div>
   <?php endwhile; ?>

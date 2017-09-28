@@ -19,9 +19,9 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">updates</a>
+      <a href="news.php" class="w3-bar-item w3-button">updates</a>
       <a href="news.php" class="w3-bar-item w3-button">News</a>
-      <a href="#" class="w3-bar-item w3-button">Publish</a>
+      <a href="event.php" class="w3-bar-item w3-button">Events</a>
     </div>
   </div> 
   <div class="w3-dropdown-hover">
@@ -30,7 +30,7 @@
     </button>
     <div class="w3-dropdown-content w3-bar-block">
       <a href="blood.php" class="w3-bar-item w3-button">Blood Bank</a>
-      <a href="#" class="w3-bar-item w3-button">Donate a food</a>
+      <a href="food.php" class="w3-bar-item w3-button">Donate a food</a>
     </div>
   </div> 
   <div class="w3-dropdown-hover">
@@ -38,40 +38,29 @@
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Gallery</a>
-      <a href="#" class="w3-bar-item w3-button">About</a>
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="about.php" class="w3-bar-item w3-button">About</a>
     </div>
   </div> 
-  <div class="w3-dropdown-hover">
-    <button class="w3-button">Events
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Technical Events</a>
-      <a href="#" class="w3-bar-item w3-button">Non-Technical Events</a>
-      <a href="#" class="w3-bar-item w3-button">Discourses</a>
-    </div>
-  </div> 
-  <div class="w3-dropdown-hover">
-    <button class="w3-button">Phone Book
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Emergency</a>
-      <a href="#" class="w3-bar-item w3-button">Essentials</a>
-    </div>
-  </div> 
+  <a href="event.php" class="w3-bar-item w3-button">Events</a>
+  <a href="phone_book.php" class="w3-bar-item w3-button">Phone Book</a>
   <div class="w3-dropdown-hover">
     <button class="w3-button">Transportation
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="w3-dropdown-content w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Bus Details</a>
-      <a href="#" class="w3-bar-item w3-button">Local Auto App</a>
-    </div>
+      <a href="getRoutes.php" class="w3-bar-item w3-button">Bus Details</a>
+      <a href="https://www.jugnoo.in/rides/coimbatore" class="w3-bar-item w3-button">Local Auto App</a>
+      <a href="drivers.php" class="w3-bar-item w3-button">Acting Drivers</a>
+      </div>
   </div> 
   <a href="tourtism.php" class="w3-bar-item w3-button">Place of Interest</a>
   <a href="guides.php" class="w3-bar-item w3-button">Guides in Coimbatore</a>
+  <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
+  <a href="hostipals.php" class="w3-bar-item w3-button">Hospitals</a>
+  <a href="jobs.php" class="w3-bar-item w3-button">Jobs in Coimbatore</a>
+  <a href="rental.php" class="w3-bar-item w3-button">Rent a House</a>
+
 </div>
 
 <div zclass="w3-main" id="main">
@@ -167,7 +156,24 @@
   
   </div>
   </div>
-  
+  <div class="row well">
+<div class="col-sm-12" >
+<header class="w3-container w3-blue">
+        <h4><span>Useful Links</span></h4>
+      </header>
+
+      <div class="w3-container">
+      <a href = "drivers.php">Acting Driver</a><br>
+      <a href = "guides.php">Avail Local Guide</a><br>
+      <a href = "rental.php">Rent House</a><br>
+      <a href = "educational.php">Donate Food</a><br>
+
+</div>
+<footer class="w3-container w3-blue">
+
+     </footer>
+</div>
+</div>
 <script>
 function w3_open() {
   document.getElementById("main").style.marginLeft = "25%";

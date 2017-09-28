@@ -1,11 +1,25 @@
-<?php include 'config/database.php'; ?>
 <?php
-  $query = "SELECT * from jobs";
-  $getJobs = mysqli_query($con,$query);
+include 'config/database-config.php' ;
+?>
+<?php
+$s ="";
+if(isset($_POST['Category'])){
+		$s = $_POST['Category'];
+	}
+	if($s == ""){
+		$sql='SELECT * FROM phone_book';
+		$query = $dbh->prepare($sql);
+	$query->execute();
+	}else{
+	$sql='SELECT * FROM phone_book WHERE Category = :s' ;
+	$query = $dbh->prepare($sql);
+
+	$query->execute(array(':s' => $s));
+	}
 ?>
 <!DOCTYPE html>
 <html>
-<title>Coimbatore Jobs</title>
+<title>Coimbatore Events</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,6 +27,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
+
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
@@ -74,30 +89,56 @@
   </div>
 </div>
 
-<img src="images/jobs.jpg" alt="Announcement" style="width:60%">
+<img src="images/event.gif" alt="Announcement" style="width:60%">
 
 <div class="w3-container">
-  <h2>Jobs</h2>
-  <p>Jobs available in coimbatore.</p>
+  <h2>Important contacts in Coimbatore</h2>
+<div class="row">
+<form class="form-horizontal" method="POST" action="phone_book.php">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Events">Category :</label>
+      <div class="col-sm-10">          
+    <select class="form-control" name ="Category">
+    <option value="">select Category</option>
+    <option value="COMPUTER, SOFTWARE, IT, BPO SERVICES">COMPUTER, SOFTWARE, IT, BPO SERVICES</option>
+    <option value="SERVICES">SERVICES</option>
+    <option value="ELECTRONICS, ELECTRICALS & MOBILES">ELECTRONICS, ELECTRICALS & MOBILES</option>
+    <option value="FINANCE, INSURANCE & REAL ESTATE">FINANCE, INSURANCE & REAL ESTATE</option>
+    <option value="MANUFACTURING">MANUFACTURING</option>
+    <option value="SHOPS, DEPARTMENTAL STORES, MALIGAI, TRADERS">SHOPS, DEPARTMENTAL STORES, MALIGAI, TRADERS</option>
+    <option value="INDUSTRIES & MANUFACTURERS">INDUSTRIES & MANUFACTURERS</option>
+    <option value="TRAVELS & TOURISM">TRAVELS & TOURISM</option>
+    <option value="COLLEGES">COLLEGES</option>
+    <option value="Police Station">Police Station</option>
+    <option value="Hospital">Hospital</option>
+    <option value="Ambulance">Ambulance</option>
+    <option value="Pharmacy">Pharmacy</option>
+    <option value="Fire Station">Fire Station</option>
+    </select>
+    </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="text" class="btn btn-default" >Submit</button>
+    </form>
+</div><br><br>
   <div class="row">
   <div class="col-lg-12 full-width-media-text">
-  <?php while($row = mysqli_fetch_assoc($getJobs)) : ?>
-    <div class="col-lg-4 col-sm-4">
+  <?php while($row = $query->fetch(PDO::FETCH_ASSOC)) : ?>
+    <div class="col-lg-3 col-sm-3">
       <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Company_name'] ?></span></h4>
+        <h4><span><?php echo $row['Title'] ?></span></h4>
       </header>
 
       <div class="w3-container">
       <ul>
-        <li><span class = "Title">Description :</span><span><?php echo $row['Description'] ?></span></li>
-        <li><span class = "Title">Profile :</span><span><?php echo $row['profile'] ?></span></li>
-        <li><span class = "Title">Experiences :</span><span><?php echo $row['experience'] ?></span></li>
-        <li><span class = "Title">Apply Before :</span><span><?php echo $row['Apply_by'] ?></span></li>
+        <li><span class = "Title">Address :</span><span><?php echo $row['Address'] ?></span></li>
+        <li><span class = "Title">Category :</span><span><?php echo $row['Category'] ?></span></li>
         </ul>
       </div>
 
       <footer class="w3-container w3-blue">
-        <h5><span>More Details</span><span class="pull-right"><a href ="<?php echo $row['details'] ?>"><?php echo $row['Company_name'] ?></a></span></h5>
+        <h5><span>Contact :</span><span class="pull-right"><?php echo $row['Phone'] ?></span></h5>
      </footer>
     </div>
   <?php endwhile; ?>

@@ -9,23 +9,58 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+
+<div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
   onclick="w3_close()">Close <span class="pull-right glyphicon glyphicon-remove"></span></button>
-  <a href="#" class="w3-bar-item w3-button"><span class="pull-left fa fa-home"></span>announcement</a>
-  <a href="events.php" class="w3-bar-item w3-button">Events</a>
-  <a href="news.php" class="w3-bar-item w3-button">News</a>
-  <a href="#" class="w3-bar-item w3-button">Publish</a>
-  <a href="Blood.php" class="w3-bar-item w3-button">Blood Bank</a>
-  <a href="#" class="w3-bar-item w3-button">Bus Details</a>
-  <a href="#" class="w3-bar-item w3-button">Gallery</a>
-  <a href="#" class="w3-bar-item w3-button">Tourism</a>
-  <a href="#" class="w3-bar-item w3-button">Phone Book</a>
-  <a href="#" class="w3-bar-item w3-button">Hostipals</a>
-  <a href="#" class="w3-bar-item w3-button">Restaruants</a>
-  <a href="#" class="w3-bar-item w3-button">Donate a food</a>
-</div>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button"><span class="pull-left fa fa-home"></span>Announcesments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="news.php" class="w3-bar-item w3-button">updates</a>
+      <a href="news.php" class="w3-bar-item w3-button">News</a>
+      <a href="event.php" class="w3-bar-item w3-button">Events</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Social Activaties
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="blood.php" class="w3-bar-item w3-button">Blood Bank</a>
+      <a href="food.php" class="w3-bar-item w3-button">Donate a food</a>
+    </div>
+  </div> 
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">More about Coimbatore
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="about.php" class="w3-bar-item w3-button">About</a>
+    </div>
+  </div> 
+  <a href="event.php" class="w3-bar-item w3-button">Events</a>
+  <a href="phone_book.php" class="w3-bar-item w3-button">Phone Book</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Transportation
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="getRoutes.php" class="w3-bar-item w3-button">Bus Details</a>
+      <a href="https://www.jugnoo.in/rides/coimbatore" class="w3-bar-item w3-button">Local Auto App</a>
+      <a href="drivers.php" class="w3-bar-item w3-button">Acting Drivers</a>
+      </div>
+  </div> 
+  <a href="tourtism.php" class="w3-bar-item w3-button">Place of Interest</a>
+  <a href="guides.php" class="w3-bar-item w3-button">Guides in Coimbatore</a>
+  <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
+  <a href="hostipals.php" class="w3-bar-item w3-button">Hospitals</a>
+  <a href="jobs.php" class="w3-bar-item w3-button">Jobs in Coimbatore</a>
+  <a href="rental.php" class="w3-bar-item w3-button">Rent a House</a>
 
+</div>
 <div zclass="w3-main" id="main">
 
 <div class="w3-teal">
@@ -68,7 +103,7 @@
 
 </div>
 <div class="col-sm-8" >
-<p>Aliyar(also spelt Azhiyar / Aaliyar) Reservoir is a 6.48 km2 (2.5 sq mi) reservoir located in Aliyar village near Pollachi town in Coimbatore District, Tamil Nadu, South India. The dam is located in the foothills of Valparai, in the Anaimalai Hills of the Western Ghats.[3] It is about 65 kilometres (40 mi) from Coimbatore. The dam offers some ideal getaways including a park, garden, aquarium, play area and a mini Theme-Park maintained by Tamil Nadu Fisheries Corporation for visitors enjoyment. The scenery is beautiful, with mountains surrounding three quarters of the reservoir. Boating is also available.
+<p>Aliyar(also spelt Azhiyar / Aaliyar) Reservoir is a 6.48 km2 (2.5 sq mi) reservoir located in Aliyar village near Pollachi town in Coimbatore District, Tamil Nadu, South India. The dam is located in the foothills of Valparai, in the Anaimalai Hills of the Western Ghats.[3] It is about 65 kilometres (40 mi) from Coimbatore. The dam offers some ideal getaways including a park, garden, aquarium, play area and a mini Theme-Park Boating is also available.
 <br>
 <br>
   Location : From Railway Station
@@ -79,7 +114,9 @@
   Ukkadam :12,12A,12D,12F,18,31D<br>
   Gandhipuram :12,12A,12D,12F,18,33A<br>
   Singanallur : first take -12,12A,12D  second take-105,108,109,113,140,19,19D,1a<br>
-  Town hall :12,12A,12D,12F,18,31D<br>
+  Town hall :12,12A,12D,12F,18,31D<br><br>
+  Nearby:<br>
+  Hospital : Sri Shakthi Hospital (5km away)<br>Restaurant: Arun Mess (3km away).
 </p>
 </div>
 </div>
@@ -117,7 +154,9 @@ Buses passing routs<br>
   Ukkadam :102B,11A,12,12A,12D,12F<br>
   Gandhipuram :1C,1D,13C<br>
   Singanallur :105C,108A,109,113,140,19C<br>
-  Town hall :102B<br>
+  Town hall :102B<br><br>
+  Nearby:<br>
+  Hospital : Apollo Clinic (1.5km away).
 
 </p>
 </div>
@@ -156,7 +195,9 @@ Buses passing routs
   Ukkadam :10A,13A,16A,31D,39,39a<br>
   Gandhipuram :105C,108A,109,10B,10C,113<br>
   Singanallur :105C,108A,109,113,13A,140<br>
-  Town hall : 10A,13A,16A,16B,2,2D
+  Town hall : 10A,13A,16A,16B,2,2D<br><br>
+  Nearby:<br>
+  Hospital : Sri RamaKrishna Hospital (3km away)<br>Restaurant: Gokul Restaurant (1.5km away).
 </p>
 </div>
 </div>
@@ -199,6 +240,24 @@ Buses passing routs
 </p>
 </div>
 
+<div class="row well">
+<div class="col-sm-12" >
+<header class="w3-container w3-blue">
+        <h4><span>Useful Links</span></h4>
+      </header>
+
+      <div class="w3-container">
+      <a href = "drivers.php">Acting Driver</a><br>
+      <a href = "guides.php">Avail Local Guide</a><br>
+      <a href = "rental.php">Rent House</a><br>
+      <a href = "educational.php">Donate Food</a><br>
+
+</div>
+<footer class="w3-container w3-blue">
+
+     </footer>
+</div>
+</div>
 
 </div>
 

@@ -1,11 +1,6 @@
-<?php include 'config/database.php'; ?>
-<?php
-  $query = "SELECT * from jobs";
-  $getJobs = mysqli_query($con,$query);
-?>
 <!DOCTYPE html>
 <html>
-<title>Coimbatore Jobs</title>
+<title>Coimbatore Events</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -13,6 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
+
 
 <div class="w3-sidebar w3-bar-block w3-light-grey w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large"
@@ -74,38 +70,22 @@
   </div>
 </div>
 
-<img src="images/jobs.jpg" alt="Announcement" style="width:60%">
+<img src="images/water.gif" alt="Ground water level" style="width:60%">
 
 <div class="w3-container">
-  <h2>Jobs</h2>
-  <p>Jobs available in coimbatore.</p>
+  <h2>Know Ground water level at your area.</h2>
   <div class="row">
-  <div class="col-lg-12 full-width-media-text">
-  <?php while($row = mysqli_fetch_assoc($getJobs)) : ?>
-    <div class="col-lg-4 col-sm-4">
-      <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Company_name'] ?></span></h4>
-      </header>
-
-      <div class="w3-container">
-      <ul>
-        <li><span class = "Title">Description :</span><span><?php echo $row['Description'] ?></span></li>
-        <li><span class = "Title">Profile :</span><span><?php echo $row['profile'] ?></span></li>
-        <li><span class = "Title">Experiences :</span><span><?php echo $row['experience'] ?></span></li>
-        <li><span class = "Title">Apply Before :</span><span><?php echo $row['Apply_by'] ?></span></li>
-        </ul>
-      </div>
-
-      <footer class="w3-container w3-blue">
-        <h5><span>More Details</span><span class="pull-right"><a href ="<?php echo $row['details'] ?>"><?php echo $row['Company_name'] ?></a></span></h5>
-     </footer>
-    </div>
-  <?php endwhile; ?>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https:////batchgeo.com/map/7e18fa42804b773658f3693fd7723783"></iframe>
   </div>
 </div>
 </div>
-
+<div class="row">
+Know your area water level
 </div>
+</div>
+
+
 
 <script>
 function w3_open() {
@@ -119,8 +99,6 @@ function w3_close() {
   document.getElementById("mySidebar").style.display = "none";
   document.getElementById("openNav").style.display = "inline-block";
 }
-
 </script>
-
 </body>
 </html>
