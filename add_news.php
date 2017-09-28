@@ -36,50 +36,41 @@
 </div>
 
 <div class="container">
-  <h2>Join With us as a Local Guide</h2>
- 
-
-<form class="form-horizontal" enctype="multipart/form-data" action="guides_add_process.php" method="POST">  
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Name">Name:</label>
+  <h2>Add Your Events</h2>
+  <form class="form-horizontal" method="POST" action="add_news_process.php">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="News">News Type:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
+    <select class="form-control" name ="News_Type">
+    <option value="0">Politics</option>
+    <option value="1">Sports</option>
+    <option value="2">Education</option>
+    <option value="3">Bussiness</option>
+    </select>
+    </div>
+    </div>
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Title">News Title:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Title" placeholder="Enter News Title" name="Title">
       </div>
     </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Language">Languages Known :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="language" placeholder="Enter Languages Known" name="language">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Phone">Phone :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="phone" placeholder="Enter Mobile number" name="phone">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ages">Ages :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="ages" placeholder="Enter Your age" name="age">
-      </div>
-    </div>
-
- <div class="form-group">
-      <label class="control-label col-sm-2" for="Charges">Charges :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="Charges" placeholder="Enter Charges per day" name="Charges">
-      </div>
-    </div>
-
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="proof">Upload your Proof:</label>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Newsdes">News Description:</label>
       <div class="col-sm-10">
-        <input type="file" class="form-control" id="photo" name="photo">
+        <textarea rows="5" class="form-control" id="Newsdes" placeholder="Enter News Details" name="Newsdes"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Date">Date:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Date" placeholder="Enter Venue" name="Date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="NewsBan">News Banner:</label>
+      <div class="col-sm-10">
+        <input type="file" class="form-control" id="NewsBan" name="NewsBan">
       </div>
     </div>
     <div class="form-group">        

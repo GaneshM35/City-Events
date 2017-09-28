@@ -2,18 +2,22 @@
  include 'config/database.php';
 
  //This is the directory where images will be saved 
- $target = "proofs/"; 
+ $target = "events/"; 
  $target = $target . basename( $_FILES['photo']['name']); 
  
  //This retrieves all the other information from the form 
- $name=$_POST['name']; 
- $languages=$_POST['language']; 
- $phone=$_POST['phone'];
- $age=$_POST['ages']; 
- $charges=$_POST['Charges']; 
+ $event_type=$_POST['Event_Type']; 
+ $event_title=$_POST['Title']; 
+ $eventdes=$_POST['Eventdes'];
+ $location=$_POST['Location']; 
+ $date=$_POST['Date'];
+ $from=$_POST['FromTime'];
+ $to=$_POST['ToTime']; 
+ $organisator=$_POST['Organistor'];
+
  $pic=($_FILES['photo']['name']); 
  
- $sql = "INSERT INTO guides (name,mobile,languages,age,charges,proofs) VALUES ('$name', '$phone', '$languages', '$age','$charges','$pic')" ; 
+ $sql = "INSERT INTO events (Organisator,Location,Date,From_Time,To_Time,Event_Cat,Event_Type,Event_desc,Events_pic) VALUES ('$organisator', '$location', '$date', '$from','$to','$event_type','$event_title','$eventdes','$pic')" ; 
 
 //$addGuide = mysqli_query($con,$sql);
 if (mysqli_query($con, $sql)) {
@@ -21,9 +25,9 @@ if (mysqli_query($con, $sql)) {
     header('Location: index.php');
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
-} 
- //Writes the photo to the server 
- if(move_uploaded_file($_FILES['photo']['tmp_name'], $target)) 
+}
+
+if(move_uploaded_file($_FILES['photo']['tmp_name'], $target)) 
  { 
  
  //Tells you if it is all ok 
@@ -33,5 +37,6 @@ if (mysqli_query($con, $sql)) {
  
  //Gives an error if it is not ok 
  echo "Sorry, there was a problem uploading your file."; 
- } 
- ?> 
+ }  
+
+?> 

@@ -36,50 +36,42 @@
 </div>
 
 <div class="container">
-  <h2>Join With us as a Local Guide</h2>
- 
-
-<form class="form-horizontal" enctype="multipart/form-data" action="guides_add_process.php" method="POST">  
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Name">Name:</label>
+  <h2>Add Your Events</h2>
+  <form class="form-horizontal" method="POST" action="add_job_process.php">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Title">Company Name:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
+        <input type="text" class="form-control" id="Title" placeholder="Enter Company Name" name="Title">
       </div>
     </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Language">Languages Known :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="language" placeholder="Enter Languages Known" name="language">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Phone">Phone :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="phone" placeholder="Enter Mobile number" name="phone">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ages">Ages :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="ages" placeholder="Enter Your age" name="age">
-      </div>
-    </div>
-
- <div class="form-group">
-      <label class="control-label col-sm-2" for="Charges">Charges :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="Charges" placeholder="Enter Charges per day" name="Charges">
-      </div>
-    </div>
-
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="proof">Upload your Proof:</label>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Jobdes">Job Description:</label>
       <div class="col-sm-10">
-        <input type="file" class="form-control" id="photo" name="photo">
+        <textarea rows="5" class="form-control" id="Jobdes" placeholder="Enter Job Details" name="Jobdes"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Profile">Job Profile:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Profile" placeholder="Enter Profile" name="Profile">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="exp">Experiences (in yrs):</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="exp" placeholder="Enter Experiences (in yrs):" name="exp">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="applyon">Apply By:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="apply" placeholder="Enter late date" name="apply">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="details">Company Link:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="details" placeholder="Enter Company Link" name="details">
       </div>
     </div>
     <div class="form-group">        

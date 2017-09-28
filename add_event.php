@@ -36,50 +36,64 @@
 </div>
 
 <div class="container">
-  <h2>Join With us as a Local Guide</h2>
- 
-
-<form class="form-horizontal" enctype="multipart/form-data" action="guides_add_process.php" method="POST">  
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Name">Name:</label>
+  <h2>Add Your Events</h2>
+  <form class="form-horizontal" method="POST" action="add_event_process.php">
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Events">Event Type:</label>
       <div class="col-sm-10">          
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Name" name="name">
+    <select class="form-control" name ="Event_Type">
+    <option value="0">Technical Events</option>
+    <option value="1">Non-Technical Events</option>
+    <option value="2">Discourses</option>
+    </select>
+    </div>
+    </div>
+  <div class="form-group">
+      <label class="control-label col-sm-2" for="Title">Event Title:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Title" placeholder="Enter Event Title" name="Title">
       </div>
     </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Language">Languages Known :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="language" placeholder="Enter Languages Known" name="language">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="Phone">Phone :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="phone" placeholder="Enter Mobile number" name="phone">
-      </div>
-    </div>
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="ages">Ages :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="ages" placeholder="Enter Your age" name="age">
-      </div>
-    </div>
-
- <div class="form-group">
-      <label class="control-label col-sm-2" for="Charges">Charges :</label>
-      <div class="col-sm-10">          
-        <input type="text" class="form-control" id="Charges" placeholder="Enter Charges per day" name="Charges">
-      </div>
-    </div>
-
-
-<div class="form-group">
-      <label class="control-label col-sm-2" for="proof">Upload your Proof:</label>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Eventdes">Event Description:</label>
       <div class="col-sm-10">
-        <input type="file" class="form-control" id="photo" name="photo">
+        <textarea rows="5" class="form-control" id="Eventdes" placeholder="Enter Event Details" name="Eventdes"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Location">Location:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Location" placeholder="Enter Venue" name="Location">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Date">Date:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="Date" placeholder="Enter Venue" name="Date">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="timeFrom">From Time:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="FromTime" placeholder="Enter Start Time" name="FromTime">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="timeTo">To Time:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="ToTime" placeholder="Enter End Time" name="ToTime">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Organistor">Organisator:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="Organistor" placeholder="Enter Organistor Name" name="Organistor">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="EventBan">Event Banner:</label>
+      <div class="col-sm-10">
+        <input type="file" class="form-control" id="EventBan" name="EventBan">
       </div>
     </div>
     <div class="form-group">        

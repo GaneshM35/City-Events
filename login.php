@@ -121,9 +121,9 @@ button {
 
     <label><b>Location</b></label>
     <input type="text" placeholder="Enter your Area" name="location" required>    
-
+    
     <label><b>Blood Group</b></label>
-    <select name ="blood">
+    <select class="form-control" name ="blood">
     <option value="A+ve">A+ve</option>
     <option value="A-ve">A-ve</option>
     <option value="B+ve">B+ve</option>
@@ -132,12 +132,15 @@ button {
     <option value="AB-ve">AB-ve</option>
     <option value="O+ve">O+ve</option>
     <option value="O-ve">O-ve</option>
-    </select><br><br>
-    <input type="text" name="blood_ag" id="blood_ag" value="" />
+    </select>
+    <br><br>
+    
     <label><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required>
 
-    <input type="checkbox" id="BG_box" /> Do you Like to Donate Blood
+    <label><b>Like To Donate Blood</b></label>
+    <label class="radio-inline"><input type="radio" name="blood_ag" value ="1">Yes</label>
+    <label class="radio-inline"><input type="radio" name="blood_ag" value ="0">No</label>
     
     <div class="clearfix">
       <button type="button" class="cancelbtn">Cancel</button>
@@ -150,7 +153,7 @@ button {
 
 <div id="Signin" class="tabcontent">
   <h3>Sign In</h3>
-  <form action="login.php" style="border:1px solid #ccc">
+  <form method="POST" action="authenticate.php" style="border:1px solid #ccc">
   <div class="container">
     
     <label><b>Email-ID</b></label>
