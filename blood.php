@@ -160,7 +160,7 @@
         <td><?php echo $row['Blood_Group'] ?></td>
         <td><form action='message.php' method='POST'><input type='hidden' name='tempId' value= <?php echo $row['Mobile'] ?>/>
               <span>
-              <button type="button" data-id =<?php echo $row['Mobile'] ?> class="open-message btn btn-info btn-lg" data-toggle="modal" data-target="#reqBlood">Send Message</button>
+              <button type="button" data-id =<?php echo $row['Mobile'] ?> class="open-message btn btn-info btn-md" data-toggle="modal" data-target="#reqBlood">Send Message</button>
 
   <!-- Modal -->
   <div class="modal fade" id="reqBlood" role="dialog">

@@ -89,7 +89,7 @@ if(isset($_POST['Category'])){
   </div>
 </div>
 
-<img src="images/event.gif" alt="Announcement" style="width:60%">
+<img src="images/phonebook.jpg" alt="Announcement" style="width:60%">
 
 <div class="w3-container">
   <h2>Important contacts in Coimbatore</h2>

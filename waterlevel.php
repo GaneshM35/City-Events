@@ -80,8 +80,23 @@
   </div>
 </div>
 </div>
-<div class="row">
-Know your area water level
+<div class="row well">
+<div class="col-sm-12" >
+<header class="w3-container w3-blue">
+        <h4><span>Useful Links</span></h4>
+      </header>
+
+      <div class="w3-container">
+      <a href = "drivers.php">Acting Driver</a><br>
+      <a href = "guides.php">Avail Local Guide</a><br>
+      <a href = "rental.php">Rent House</a><br>
+      <a href = "educational.php">Donate Food</a><br>
+
+</div>
+<footer class="w3-container w3-blue">
+
+     </footer>
+</div>
 </div>
 </div>
 

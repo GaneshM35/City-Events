@@ -99,7 +99,7 @@
         <td><?php echo $row['Open_Hours'] ?></td>
         <td><form action='message.php' method='POST'><input type='hidden' name='tempId' value= <?php echo $row['Phone_no'] ?>/>
               <span>
-              <button type="button" data-id =<?php echo $row['Phone_no'] ?> class="open-message btn btn-info btn-lg" data-toggle="modal" data-target="#food">Send Message</button>
+              <button type="button" data-id =<?php echo $row['Phone_no'] ?> class="open-message btn btn-info btn-md" data-toggle="modal" data-target="#food">Send Message</button>
 
   <!-- Modal -->
   <div class="modal fade" id="food" role="dialog">

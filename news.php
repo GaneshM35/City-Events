@@ -1,6 +1,6 @@
 <?php include 'config/database.php'; ?>
 <?php
-  $query = "SELECT * from announcements";
+  $query = "SELECT * from news";
   $getAnnounces = mysqli_query($con,$query);
 ?>
 <!DOCTYPE html>
@@ -60,10 +60,17 @@
   </div> 
   <a href="tourtism.php" class="w3-bar-item w3-button">Place of Interest</a>
   <a href="guides.php" class="w3-bar-item w3-button">Guides in Coimbatore</a>
-  <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
   <a href="hostipals.php" class="w3-bar-item w3-button">Hospitals</a>
   <a href="jobs.php" class="w3-bar-item w3-button">Jobs in Coimbatore</a>
   <a href="rental.php" class="w3-bar-item w3-button">Rent a House</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Awareness
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
+    </div>
+  </div> 
 
 </div>
 <div zclass="w3-main" id="main">
@@ -78,14 +85,14 @@
 <img src="images/banner.jpg" alt="Announcement" style="width:60%">
 
 <div class="w3-container">
-  <h2>Announcements</h2>
+  <h2>News</h2>
   <p>Know more whats happening in and around coimbatore.</p>
   <div class="row">
   <div class="col-lg-12 full-width-media-text">
   <?php while($row = mysqli_fetch_assoc($getAnnounces)) : ?>
     <div class="col-lg-3 col-sm-3">
       <header class="w3-container w3-blue">
-        <h4><span><?php echo $row['Title'] ?></span></h4>
+        <h4><span><?php echo $row['TITLE'] ?></span></h4>
       </header>
 
       <div class="w3-container">
@@ -93,7 +100,7 @@
       </div>
 
       <footer class="w3-container w3-blue">
-        <h5><span><?php echo $row['User'] ?></span><span class="pull-right"><?php echo $row['Time'] ?></span></h5>
+        <h5><span><?php echo $row['Date'] ?></span><span class="pull-right"><?php echo $row['News_ID'] ?></span></h5>
      </footer>
     </div>
   <?php endwhile; ?>

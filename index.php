@@ -2,7 +2,7 @@
 <?php include 'api/weather.php' ; ?>
 <!DOCTYPE html>
 <html>
-<title>Coimbatore Events</title>
+<title>Cozy Covai</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -56,10 +56,18 @@
   </div> 
   <a href="tourtism.php" class="w3-bar-item w3-button">Place of Interest</a>
   <a href="guides.php" class="w3-bar-item w3-button">Guides in Coimbatore</a>
-  <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
   <a href="hostipals.php" class="w3-bar-item w3-button">Hospitals</a>
   <a href="jobs.php" class="w3-bar-item w3-button">Jobs in Coimbatore</a>
   <a href="rental.php" class="w3-bar-item w3-button">Rent a House</a>
+  <div class="w3-dropdown-hover">
+    <button class="w3-button">Awareness
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-bar-block">
+      <a href="waterlevel.php" class="w3-bar-item w3-button">Know under ground Water level</a>
+      <a href="https://goo.gl/zNmvGE" class="w3-bar-item w3-button">Dengue</a>
+    </div>
+  </div> 
 
 </div>
 
@@ -68,7 +76,7 @@
 <div class="w3-teal">
   <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
   <div class="w3-container">
-    <h1>My City</h1>
+    <h1>Cozy Covai</h1>
   </div>
 </div>
 
@@ -85,6 +93,13 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
+
+      <div class="item">
+        <img src="images/index3.jpg" alt="My City" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Railway Station</h3>
+        </div>
+      </div>
 
       <div class="item active">
         <img src="images/index1.png" alt="My City" style="width:100%;">
@@ -104,13 +119,6 @@
         <img src="images/index4.jpg" alt="My City" style="width:100%;">
         <div class="carousel-caption">
           <h3>Maruthamalai</h3>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="images/index3.jpg" alt="My City" style="width:100%;">
-        <div class="carousel-caption">
-          <h3>Railway Station</h3>
         </div>
       </div>
   
